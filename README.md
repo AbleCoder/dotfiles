@@ -5,7 +5,7 @@ So many wasted hours to get these just right... almost.
 
 ## Usage
 
-1. Install these known prerequisites
+1. Install/Configure these known prerequisites
 
   ```
   brew install brew-gem mercurial
@@ -14,6 +14,7 @@ So many wasted hours to get these just right... almost.
   brew tap homebrew/dupes
   brew unlink ruby
   brew install homebrew/dupes/vim
+  git config --global core.editor /usr/bin/vim
   brew link ruby
   brew install tmux reattach-to-user-namespace
   ```

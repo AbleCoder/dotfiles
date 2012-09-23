@@ -12,9 +12,6 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-" Fixes SuperTab highlight color with base16-default color scheme
-highlight Pmenu ctermbg=238 gui=bold
-
 " store swap/backup files in one folder
 set backupdir=~/.vim/.backup,/tmp
 set directory=~/.vim/.backup,/tmp
@@ -109,25 +106,47 @@ nmap <leader>_  :rightbelow new<CR>
 "-------------------------------------------------------------------------------
 
 " CoffeeScript
+"""""""""""""""
+" open coffeescript compile window vertically
 let coffee_compile_vert = 1
 
-" CtrlP
-nnoremap <c-b> :CtrlPBuffer<CR>
 
+" CtrlP
+""""""""
+" open buffer list on
+nnoremap <c-b> :CtrlPBuffer<CR>
+" clear ctrlp cache then open ctrlp
+nnoremap <silent> <c-l> :ClearCtrlPCache<cr>\|:CtrlP<cr>
+" search .* files/folders
 let g:ctrlp_show_hidden = 1
 
+
 " EasyMotion
+"""""""""""""
 let g:EasyMotion_leader_key = '<Leader>' 
 
+
 " Lusty
+""""""""
+" hide buffers when they are abandoned
 set hidden
 
+
 " Powerline
+""""""""""""
 let g:Powerline_symbols = 'fancy'
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 
+
+" SuperTab
+"""""""""""
+" fix highlight cur item in tab complete menu
+autocmd VimEnter * highlight Pmenu ctermbg=238 gui=bold
+
+
 " Tagbar (ctags)
+"""""""""""""""""
 filetype on
 nnoremap <leader>lt :TagbarToggle<CR>
 
@@ -147,7 +166,9 @@ if executable('coffeetags')
         \ }
 endif
 
+
 " Vimux
+""""""""
 "map <Leader>vp :VimuxPromptCommand<CR>
 "map <Leader>vl :VimuxRunLastCommand<CR>
 "map <Leader>vi :VimuxInspectRunner<CR>
@@ -160,6 +181,7 @@ endif
 "-------------------------------------------------------------------------------
 " Tmux Custom Scripts/Mappings
 "-------------------------------------------------------------------------------
+
 " toggle tmux pane for cli (capital C for BIG cli pane)
 noremap <silent> <Leader>c :silent !~/tvim-toggle-cli-pane<CR>
 noremap <silent> <Leader>C :silent !~/tvim-toggle-cli-pane -b<CR>
