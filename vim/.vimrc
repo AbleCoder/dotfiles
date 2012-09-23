@@ -7,9 +7,9 @@ filetype off
 
 " Whitespace stuff
 set nowrap
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 " store swap/backup files in one folder
@@ -52,6 +52,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'rodjek/vim-puppet'
 Bundle 'wavded/vim-stylus'
 Bundle 'vim-scripts/bash-support.vim'
+Bundle 'klen/python-mode'
 
 " tab/auto complete
 Bundle 'ervandew/supertab'
@@ -149,6 +150,16 @@ set hidden
 let g:Powerline_symbols = 'fancy'
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
+
+
+" python-mode
+""""""""""""""
+" do NOT load rope plugin
+let g:pymode_rope = 0
+" disable python folding
+let g:pymode_folding = 0
+" disable pylint checking every save
+let g:pymode_lint_write = 0
 
 
 " SuperTab

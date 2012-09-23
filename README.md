@@ -14,8 +14,8 @@ So many wasted hours to get these just right... almost.
   brew tap homebrew/dupes
   brew unlink ruby
   brew install homebrew/dupes/vim
-  git config --global core.editor /usr/bin/vim
   brew link ruby
+  git config --global core.editor /usr/local/bin/vim
   brew install tmux reattach-to-user-namespace
   ```
 
