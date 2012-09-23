@@ -114,6 +114,8 @@ let coffee_compile_vert = 1
 " CtrlP
 nnoremap <c-b> :CtrlPBuffer<CR>
 
+let g:ctrlp_show_hidden = 1
+
 " EasyMotion
 let g:EasyMotion_leader_key = '<Leader>' 
 
