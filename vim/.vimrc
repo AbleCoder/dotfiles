@@ -122,6 +122,12 @@ nnoremap <c-b> :CtrlPBuffer<CR>
 nnoremap <silent> <c-l> :ClearCtrlPCache<cr>\|:CtrlP<cr>
 " search .* files/folders
 let g:ctrlp_show_hidden = 1
+" custom file/folder ignores
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|ve)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 
 " EasyMotion
