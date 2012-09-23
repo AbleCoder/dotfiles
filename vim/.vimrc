@@ -101,6 +101,9 @@ nmap <leader>[  :vnew<CR>
 nmap <leader>]  :rightbelow vnew<CR>
 nmap <leader>_  :rightbelow new<CR>
 
+" allow backspace to delete end-of-line in insert mode
+set backspace=eol
+
 "-------------------------------------------------------------------------------
 " Bundle Configs
 "-------------------------------------------------------------------------------
