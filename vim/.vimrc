@@ -104,6 +104,9 @@ nmap <leader>_  :rightbelow new<CR>
 " allow backspace to delete end-of-line in insert mode
 set backspace=eol
 
+" Preserve indentation while pasting text from the OS X clipboard
+noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+
 "-------------------------------------------------------------------------------
 " Bundle Configs
 "-------------------------------------------------------------------------------
