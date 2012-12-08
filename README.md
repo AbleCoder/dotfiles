@@ -8,7 +8,7 @@ So many wasted hours to get these just right... almost.
 1. Install/Configure these known prerequisites
 
   ```
-  brew install mercurial vim tmux
+  brew install mercurial vim tmux reattach-to-user-namespace
   git config --global core.editor /usr/local/bin/vim
   ```
 
