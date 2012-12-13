@@ -1,0 +1,2 @@
+# keep ssh connection alive during inactivity
+ServerAliveInterval 10

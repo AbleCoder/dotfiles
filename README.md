@@ -23,6 +23,8 @@ So many wasted hours to get these just right... almost.
 1. Create symbolic links
 
   ```
+  mkdir ~/ssh
+  ln -s `pwd`/ssh/config ~/.ssh/config
   ln -s `pwd`/tmux/.tmux.conf ~/.tmux.conf
   ln -s `pwd`/tmux/.tmux ~/.tmux
   ln -s `pwd`/tmux/battery ~/battery
