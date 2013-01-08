@@ -32,6 +32,7 @@ So many wasted hours to get these just right... almost.
   ln -s `pwd`/tmux/tvim-toggle-cli-pane ~/tvim-toggle-cli-pane
   ln -s `pwd`/vim/.vimrc ~/.vimrc
   ln -s `pwd`/vim/.vim ~/.vim
+  ln -s `pwd`/maid/.maid ~/.maid
   ```
 
 1. Do one time Vim setup
