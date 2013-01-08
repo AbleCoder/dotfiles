@@ -26,6 +26,10 @@ Maid.rules do
   # **NOTE:** It's recommended you just use this as a template; if you run these rules on your machine without knowing
   # what they do, you might run into unwanted results!
 
+  rule 'Mac OS X torrents in disk images' do
+    trash(dir('~/Downloads/*.torrent'))
+  end
+
   rule 'Mac OS X applications in disk images' do
     trash(dir('~/Downloads/*.dmg'))
   end
