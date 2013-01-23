@@ -47,7 +47,7 @@ Bundle 'kien/ctrlp.vim'
 
 " movement
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'myusuf3/numbers.vim'
+"Bundle 'myusuf3/numbers.vim'
 
 " language support/syntax/highlighting
 Bundle 'kchmck/vim-coffee-script'
