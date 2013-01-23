@@ -57,6 +57,7 @@ Bundle 'wavded/vim-stylus'
 Bundle 'vim-scripts/bash-support.vim'
 Bundle 'klen/python-mode'
 Bundle 'vim-scripts/hexHighlight.vim'
+Bundle 'avakhov/vim-yaml'
 
 " tab/auto complete
 Bundle 'ervandew/supertab'
