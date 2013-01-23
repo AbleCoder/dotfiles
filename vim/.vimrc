@@ -11,6 +11,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set number
 
 " store swap/backup files in one folder
 set backupdir=~/.vim/.backup,/tmp
