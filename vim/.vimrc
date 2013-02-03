@@ -59,6 +59,7 @@ Bundle 'vim-scripts/bash-support.vim'
 Bundle 'klen/python-mode'
 Bundle 'vim-scripts/hexHighlight.vim'
 Bundle 'avakhov/vim-yaml'
+Bundle 'helino/vim-json'
 
 " tab/auto complete
 Bundle 'ervandew/supertab'
@@ -237,7 +238,7 @@ noremap <silent> <Leader>cb :silent !~/tvim-toggle-cli-pane -b<CR>
 "-------------------------------------------------------------------------------
 
 " coffeescript, html, htmldjango, jade, less, stylus
-au FileType coffee,html,htmldjango,jade,less,stylus
+au FileType coffee,html,htmldjango,jade,less,stylus,json
     \ set shiftwidth=2 softtabstop=2 tabstop=2 textwidth=239
 
 "-------------------------------------------------------------------------------
