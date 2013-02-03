@@ -127,7 +127,7 @@ nmap <silent> <S-Left> :vertical resize -5<CR>
 nmap <silent> <S-Right> :vertical resize +5<CR>
 
 " allow backspace to delete end-of-line in insert mode
-set backspace=indent,eol
+set backspace=indent,eol,start
 
 "-------------------------------------------------------------------------------
 " Bundle Configs
