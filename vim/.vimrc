@@ -20,9 +20,6 @@ set directory=~/.vim/.backup,/tmp
 filetype plugin indent on     " required!
 
 
-" setup vim bundles
-execute pathogen#infect()
-
 "-------------------------------------------------------------------------------
 " Color Scheme & Syntax Highlighting 
 "-------------------------------------------------------------------------------
