@@ -2,6 +2,9 @@
 " Vim Initial Setup
 "-------------------------------------------------------------------------------
 
+" init vim-pathogen
+execute pathogen#infect()
+
 set nocompatible
 filetype off
 
