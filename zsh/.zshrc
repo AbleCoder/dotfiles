@@ -25,7 +25,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew git git-flow osx pip vagrant lein)
 
-# Load all custom zshrc files (used to allow custom settings)
+# Load all custom zshrc files (used to allow custom settings with boxen)
 for zshrc_file ($HOME/.zshrc-*) source $zshrc_file
 
 # Load oh-my-zsh
