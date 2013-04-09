@@ -6,8 +6,8 @@
 ZSH=$HOME/.oh-my-zsh
 
 # oh-my-zsh theme (~/.oh-my-zsh/themes/)
-ZSH_THEME="robbyrussell"
-#ZSH_THEME="miloshadzic"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="miloshadzic"
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
