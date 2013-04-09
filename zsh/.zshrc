@@ -6,8 +6,7 @@
 ZSH=$HOME/.oh-my-zsh
 
 # oh-my-zsh theme (~/.oh-my-zsh/themes/)
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="miloshadzic"
+ZSH_THEME="robbyrussell"
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -26,6 +25,10 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew git git-flow osx pip vagrant lein)
 
+# Load all custom zshrc files (used to allow custom settings)
+for zshrc_file ($HOME/.zshrc-*) source $zshrc_file
+
+# Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # ------------------------------------------------------------------------------
