@@ -53,6 +53,8 @@ unsetopt correct_all
 #   mmv foo.* bar.*
 alias mmv='noglob zmv -W'
 
+# SSH - dis.able.cd
+alias aka='ssh aka@dis.able.cd'
 # SSH - LOT204
 alias l204='ssh root@74.116.0.10'
 alias laka='ssh aka@74.116.0.10'
