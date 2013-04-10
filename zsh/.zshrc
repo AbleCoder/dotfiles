@@ -50,6 +50,9 @@ unsetopt correct_all
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
+#
+# Flush DNS
+alias flushdns='sudo killall -HUP mDNSResponder'
 
 # Massive renaming. Examples:
 #   mmv *.dat *.dat_old
