@@ -50,7 +50,10 @@ unsetopt correct_all
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
-#
+
+# AppTrends VPM
+alias apptrends_vpn="sudo openconnect --user=brandon --cafile=/Users/brandon/.ssh/apptrends_vpn.pem 74.116.1.122"
+
 # Flush DNS
 alias flushdns='sudo killall -HUP mDNSResponder'
 
