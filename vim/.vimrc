@@ -42,10 +42,10 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 " navigate splits with the arrow keys
-" nnoremap <Right> <C-w>l
-" nnoremap <Left> <C-w>h
-" nnoremap <Up> <C-w>k
-" nnoremap <Down> <C-w>j
+nnoremap <Right> <C-w>l
+nnoremap <Left> <C-w>h
+nnoremap <Up> <C-w>k
+nnoremap <Down> <C-w>j
 
 " highlight trailing spaces
 set list listchars=tab:\ \ ,trail:·
