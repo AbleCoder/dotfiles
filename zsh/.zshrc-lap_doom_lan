@@ -8,4 +8,5 @@ ZSH_THEME="miloshadzic"
 # Aliases
 # ------------------------------------------------------------------------------
 
-alias dev='ssh brandon@dev.doom.lan'
+#alias dev='ssh brandon@dev.doom.lan'
+alias dev='mosh brandon@dev.doom.lan -- tmux attach -t 0 -d'
