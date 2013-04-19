@@ -41,6 +41,9 @@ autoload -U zmv
 # turn off autocorrect
 unsetopt correct_all
 
+# vim is my prefered default editor
+EDITOR=vim
+
 # ------------------------------------------------------------------------------
 # Boxen
 # ------------------------------------------------------------------------------
