@@ -44,6 +44,9 @@ unsetopt correct_all
 # vim is my prefered default editor
 EDITOR="vim"
 
+# set me up with mad colors
+TERM=screen-256color
+
 # ------------------------------------------------------------------------------
 # Boxen
 # ------------------------------------------------------------------------------
