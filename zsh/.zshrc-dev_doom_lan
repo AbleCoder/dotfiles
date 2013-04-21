@@ -15,3 +15,16 @@ compctl -g '~/.teamocil/*(:t:r)' teamocil
 # Aliases
 # ------------------------------------------------------------------------------
 
+# tmux
+tmx() {
+    if (( ${#*} == 1 )) ; then
+        (tmux has-session -t "$1" && tmux attach -t "$1" -d ) || tmux new-session -s "$1"
+    elif (( ${#*} == 0 )) ; then
+        print 'tmx: missing argument, requires <session name>'
+    else
+        print 'tmx: too many arguments, only takes one <session name>'
+    fi
+}
+
+# alias aka-tmux='tmux attach -t aka || tmux new "teamocil aka"'
+# alias at-tmux='tmux attach -t AppTrends || tmux new "teamocil aka"'

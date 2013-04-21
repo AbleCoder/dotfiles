@@ -81,12 +81,8 @@ alias lllinode='ssh yadoop@72.14.182.238'
 # SSH - TuneLinks
 alias tunelinks='ssh root@173.230.129.159'
 
-# Tmux
+# tmux
 alias tmux="TERM=screen-256color-bce tmux"
-
-# tmuxinator
-alias mux="EDITOR=vim mux"
-alias tmuxinator="EDITOR=vim tmuxinator"
 
 # Vagrant
 alias vhalt='vagrant halt'
