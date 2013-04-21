@@ -4,9 +4,17 @@
 
 ZSH_THEME="miloshadzic"
 
+
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
 
-alias dev='ssh brandon@dev.doom.lan'
-#alias dev='mosh brandon@dev.doom.lan -- tmux attach -t 0 -d'
+alias dev='autossh -M 0 brandon@dev.doom.lan'
+
+dev-aka() {
+    autossh -M 0 brandon@dev.doom.lan -t '. ~/.zshrc; zsh -i `tmx aka`'
+}
+
+dev-at() {
+    autossh -M 0 brandon@dev.doom.lan -t '. ~/.zshrc; zsh -i `tmx apptrends`'
+}
