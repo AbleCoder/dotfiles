@@ -28,6 +28,9 @@ plugins=(brew git git-flow osx pip vagrant lein emoji-clock tmuxinator zsh-histo
 # Load all custom zshrc files (used to allow custom settings with boxen)
 for zshrc_file ($HOME/.zshrc-*) source $zshrc_file
 
+# enable ssh agent forwarding
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
