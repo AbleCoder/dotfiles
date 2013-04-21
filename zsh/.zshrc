@@ -23,7 +23,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew git git-flow osx pip vagrant lein emoji-clock zsh-history-substring-search zsh-syntax-highlighting)
+plugins=(brew git git-flow osx pip vagrant lein emoji-clock tmuxinator zsh-history-substring-search zsh-syntax-highlighting)
 
 # Load all custom zshrc files (used to allow custom settings with boxen)
 for zshrc_file ($HOME/.zshrc-*) source $zshrc_file
@@ -40,6 +40,12 @@ autoload -U zmv
 
 # turn off autocorrect
 unsetopt correct_all
+
+# vim is my prefered default editor
+EDITOR="vim"
+
+# set me up with mad colors
+TERM=screen-256color
 
 # ------------------------------------------------------------------------------
 # Boxen
@@ -74,6 +80,10 @@ alias tunelinks='ssh root@173.230.129.159'
 
 # Tmux
 alias tmux="TERM=screen-256color-bce tmux"
+
+# tmuxinator
+alias mux="EDITOR=vim mux"
+alias tmuxinator="EDITOR=vim tmuxinator"
 
 # Vagrant
 alias vhalt='vagrant halt'
