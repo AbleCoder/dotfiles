@@ -18,12 +18,13 @@ compctl -g '~/.teamocil/*(:t:r)' teamocil
 # tmux
 tmx() {
     if (( ${#*} == 1 )) ; then
-        (tmux has-session -t "$1" && tmux attach -t "$1" -d ) || tmux new-session -s "$1"
+        tmx-command $1
     elif (( ${#*} == 0 )) ; then
-        print 'tmx: missing argument, requires <session name>'
-    else
-        print 'tmx: too many arguments, only takes one <session name>'
+        print 'tmx: Missing argument, requires <session name>'
     fi
+}
+tmx-command() {
+    (tmux has-session -t $1 > /dev/null 2>&1 && tmux attach -t $1 -d ) || tmux new-session -s $1
 }
 
 # alias aka-tmux='tmux attach -t aka || tmux new "teamocil aka"'
