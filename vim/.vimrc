@@ -102,6 +102,12 @@ set wildignore+=*/*.egg-info/*,*/.tox/*
 let g:EasyMotion_leader_key = '<Leader>' 
 
 
+" NERDTree
+"""""""""""
+map <Leader>n :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
+
 " Powerline
 """"""""""""
 let g:Powerline_symbols = 'fancy'
