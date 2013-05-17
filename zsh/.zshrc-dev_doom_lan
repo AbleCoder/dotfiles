@@ -29,3 +29,7 @@ tmx-command() {
 
 # alias aka-tmux='tmux attach -t aka || tmux new "teamocil aka"'
 # alias at-tmux='tmux attach -t AppTrends || tmux new "teamocil aka"'
+
+
+# Vagrant
+export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
