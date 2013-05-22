@@ -122,14 +122,12 @@ map <Leader>\ <C-w>o
 
 " Tabularize
 """""""""""""
-if exists(":Tabularize")
-  nmap <Leader>a= :Tabularize /=<CR>
-  vmap <Leader>a= :Tabularize /=<CR>
-  nmap <Leader>a; :Tabularize /:<CR>
-  vmap <Leader>a; :Tabularize /:<CR>
-  nmap <Leader>a: :Tabularize /:\s*\zs/l0r1<CR>
-  vmap <Leader>a: :Tabularize /:\s*\zs/l0r1<CR>
-endif
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a; :Tabularize /:<CR>
+vmap <Leader>a; :Tabularize /:<CR>
+nmap <Leader>a: :Tabularize /:\s*\zs/l0r1<CR>
+vmap <Leader>a: :Tabularize /:\s*\zs/l0r1<CR>
 
 
 "-------------------------------------------------------------------------------
