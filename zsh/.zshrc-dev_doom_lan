@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 
 ZSH_THEME="af-magic"
-ZSH_THEME="powerline.zsh-theme/powerline"
+#ZSH_THEME="powerline.zsh-theme/powerline"
 
 # ------------------------------------------------------------------------------
 # Teamocil Seetup/Config
