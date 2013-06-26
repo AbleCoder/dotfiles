@@ -106,6 +106,7 @@ let g:EasyMotion_leader_key = '<Leader>'
 """""""""""
 map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.pyc$']
 
 
 " Powerline
@@ -124,6 +125,8 @@ map <Leader>\ <C-w>o
 """""""""""""
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a+ :Tabularize /^[^=]*\zs=/<CR>
+vmap <Leader>a+ :Tabularize /^[^=]*\zs=/<CR>
 nmap <Leader>a; :Tabularize /:<CR>
 vmap <Leader>a; :Tabularize /:<CR>
 nmap <Leader>a: :Tabularize /:\s*\zs/l0r1<CR>
