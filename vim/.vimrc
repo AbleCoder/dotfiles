@@ -123,14 +123,16 @@ map <Leader>\ <C-w>o
 
 " Tabularize
 """""""""""""
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a+ :Tabularize /^[^=]*\zs=/<CR>
-vmap <Leader>a+ :Tabularize /^[^=]*\zs=/<CR>
+nmap <Leader>a+ :Tabularize /=<CR>
+vmap <Leader>a+ :Tabularize /=<CR>
+nmap <Leader>a= :Tabularize /^[^=]*\zs=/<CR>
+vmap <Leader>a= :Tabularize /^[^=]*\zs=/<CR>
 nmap <Leader>a; :Tabularize /:<CR>
 vmap <Leader>a; :Tabularize /:<CR>
 nmap <Leader>a: :Tabularize /:\s*\zs/l0r1<CR>
 vmap <Leader>a: :Tabularize /:\s*\zs/l0r1<CR>
+nmap <Leader>ap :Tabularize /import<CR>
+vmap <Leader>ap :Tabularize /import<CR>
 
 
 "-------------------------------------------------------------------------------
