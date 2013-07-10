@@ -118,7 +118,8 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 
 " ZoomWin
 """"""""""
-map <Leader>\ <C-w>o
+"map <Leader>\ <C-w>o
+map <Leader><Leader> <C-w>o
 
 
 " Tabularize
