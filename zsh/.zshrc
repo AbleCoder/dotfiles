@@ -50,11 +50,22 @@ EDITOR="vim"
 # set me up with mad colors
 TERM=screen-256color
 
+# setup virtualenvwrapper
+WORKON_HOME=$HOME/.venv
+
 # ------------------------------------------------------------------------------
 # Boxen
 # ------------------------------------------------------------------------------
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+
+# ------------------------------------------------------------------------------
+# Load Plugin after Boxen
+# ------------------------------------------------------------------------------
+
+source $ZSH/plugins/virtualenvwrapper/virtualenvwrapper.plugin.zsh
+
 
 # ------------------------------------------------------------------------------
 # Aliases
