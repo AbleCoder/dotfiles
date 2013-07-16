@@ -22,6 +22,8 @@ set directory=~/.vim/.backup,/tmp
 
 filetype plugin indent on     " required!
 
+" replace default leader backslash with comma
+let mapleader = ","
 
 "-------------------------------------------------------------------------------
 " Color Scheme & Syntax Highlighting 
@@ -52,8 +54,8 @@ set list listchars=tab:\ \ ,trail:·
 
 " split-it mapping
 nmap <leader>-  :new<CR>
-nmap <leader>[  :vnew<CR>
-nmap <leader>]  :rightbelow vnew<CR>
+nmap <leader>\  :vnew<CR>
+nmap <leader>|  :rightbelow vnew<CR>
 nmap <leader>_  :rightbelow new<CR>
 
 " fix tmux arrow key mappings
