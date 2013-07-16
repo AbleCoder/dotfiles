@@ -55,7 +55,7 @@ set list listchars=tab:\ \ ,trail:·
 " split-it mapping
 nmap <leader>-  :new<CR>
 nmap <leader>\  :vnew<CR>
-nmap <leader>|  :rightbelow vnew<CR>
+nmap <leader>\|  :rightbelow vnew<CR>
 nmap <leader>_  :rightbelow new<CR>
 
 " fix tmux arrow key mappings
