@@ -37,7 +37,7 @@ syntax on
 " Customizations
 "-------------------------------------------------------------------------------
 
-" disable arrow keys
+" disable arrow keys in normal mode
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
