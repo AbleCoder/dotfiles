@@ -8,6 +8,10 @@ execute pathogen#infect()
 set nocompatible
 filetype off
 
+" enable per-directory .vimrc files and disable unsafe commands in local .vimrc
+set exrc
+set secure
+
 " Whitespace stuff
 set nowrap
 set tabstop=4
@@ -82,18 +86,23 @@ set backspace=indent,eol,start
 
 " CtrlP
 """"""""
+
 " open buffer list on
 nnoremap <c-b> :CtrlPBuffer<CR>
+
 " clear ctrlp cache then open ctrlp
 nnoremap <silent> <c-l> :ClearCtrlPCache<cr>\|:CtrlP<cr>
+
 " search .* files/folders
 let g:ctrlp_show_hidden = 1
+
 " custom file/folder ignores
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll|pyc)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
 " add wildignores for python projects
 set wildignore+=*/.ve/*,*/.venv/*
 set wildignore+=*/*.egg-info/*,*/.tox/*
@@ -103,6 +112,17 @@ set wildignore+=*/*.egg-info/*,*/.tox/*
 """""""""""""
 let g:EasyMotion_leader_key = '<Leader>' 
 
+
+" fugitive.vim
+"""""""""""""""
+nnoremap <silent> <leader>gs :Gstatus<CR>
+nnoremap <silent> <leader>gd :Gdiff<CR>
+nnoremap <silent> <leader>gc :Gcommit<CR>
+nnoremap <silent> <leader>gb :Gblame<CR>
+nnoremap <silent> <leader>gl :Glog<CR>
+nnoremap <silent> <leader>gp :Git push<CR>
+nnoremap <silent> <leader>gw :Gwrite<CR>:GitGutter<CR>
+nnoremap <silent> <leader>gg :GitGutterToggle<CR>
 
 " NERDTree
 """""""""""
@@ -134,8 +154,14 @@ nmap <Leader>a; :Tabularize /:<CR>
 vmap <Leader>a; :Tabularize /:<CR>
 nmap <Leader>a: :Tabularize /:\s*\zs/l0r1<CR>
 vmap <Leader>a: :Tabularize /:\s*\zs/l0r1<CR>
-nmap <Leader>ap :Tabularize /import<CR>
-vmap <Leader>ap :Tabularize /import<CR>
+nmap <Leader>ai :Tabularize /import<CR>
+vmap <Leader>ai :Tabularize /import<CR>
+
+
+" Python-mode
+""""""""""""""
+let g:pymode_lint = 0 " disable linting (we use khuno instead)
+let g:pymode_virtualenv = 0
 
 
 "-------------------------------------------------------------------------------
