@@ -80,6 +80,9 @@ nmap <silent> <S-Right> :vertical resize +5<CR>
 " allow backspace to delete end-of-line in insert mode
 set backspace=indent,eol,start
 
+" toggle paste mode
+map <leader>p :set paste!<CR>
+
 "-------------------------------------------------------------------------------
 " Plugin Configs
 "-------------------------------------------------------------------------------
