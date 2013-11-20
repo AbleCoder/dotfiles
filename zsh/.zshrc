@@ -71,6 +71,9 @@ alias flushdns='sudo killall -HUP mDNSResponder'
 #   mmv foo.* bar.*
 alias mmv='noglob zmv -W'
 
+# SSH - dad's server
+alias dadserver='TERM=xterm-new ssh 50.63.9.113'
+alias doomnas='TERM=xterm-new ssh root@nas.doom.lan'
 # SSH - dis.able.cd
 alias aka='ssh aka@dis.able.cd'
 alias cloudvr='ssh cloudvr.able.cd'
