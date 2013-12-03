@@ -84,6 +84,7 @@ alias laka='ssh aka@74.116.0.10'
 alias lllinode='ssh yadoop@72.14.182.238'
 # SSH - TuneLinks
 alias tunelinks='ssh root@173.230.129.159'
+alias tunelinks-db01-ssh-tunnel='ssh db01.tunelinks.com -L 5432:db01.tunelinks.com:5432 -N'
 
 # tmux
 alias tmux="TERM=screen-256color-bce tmux"
